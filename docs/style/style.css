@@ -113,11 +113,11 @@ html {
 }
 
 .st-menu__collection {
-  background: url("/images/24collectionbanner.jpg") no-repeat 50% 20% / cover;
+  background: url("../images/24collectionbanner.jpg") no-repeat 50% 20% / cover;
 }
 
 .st-menu__collaboration {
-  background: url("/images/collabobanner.jpg") no-repeat 50% 40% / cover;
+  background: url("../images/collabobanner.jpg") no-repeat 50% 40% / cover;
 }
 
 .st-menu__nav-box {
@@ -361,7 +361,7 @@ html.st-sidemenu-box-actived > body {
 /* 섹션2 페이지 좌측 배너영역 */
 .itembox-banner {
   height: 100%;
-  background: url("/images/newss24banner.jpg") no-repeat 50% 50% / cover;
+  background: url("../images/newss24banner.jpg") no-repeat 50% 50% / cover;
   justify-content: center;
 }
 
@@ -553,7 +553,7 @@ html.st-sidemenu-box-actived > body {
 .st_section3-banner {
   height: 100%;
   width: 100%;
-  background: url("/images/jewealy.jpg") no-repeat 50% 50% / cover;
+  background: url("../images/jewealy.jpg") no-repeat 50% 50% / cover;
 }
 
 .st_section3-banner-txtbox {
@@ -579,7 +579,7 @@ html.st-sidemenu-box-actived > body {
   position: absolute;
   height: 300px;
   width: 300px;
-  top: 45%;
+  top: 40%;
   left: 70%;
 }
 
@@ -623,12 +623,12 @@ html.st-sidemenu-box-actived > body {
 
 .collabo1 {
   width: 50%;
-  background: url("/images/24collectionbanner.jpg") no-repeat 50% 20% / cover;
+  background: url("../images/24collectionbanner.jpg") no-repeat 50% 20% / cover;
 }
 
 .collabo2 {
   width: 50%;
-  background: url("/images/collabobanner.jpg") no-repeat 50% 40% / cover;
+  background: url("../images/collabobanner.jpg") no-repeat 50% 40% / cover;
 }
 
 /* 섹션4 시작 */
@@ -690,23 +690,23 @@ html.st-sidemenu-box-actived > body {
 } */
 
 .col-item01 {
-  background: url("/images/Stussy-Beats---Still-Life---4.webp") no-repeat 50%
+  background: url("../images/Stussy-Beats---Still-Life---4.webp") no-repeat 50%
     50% / cover;
 }
 .col-item02 {
-  background: url("/images/Antosh_BXR_3_2e352ac1-2171-4088-9512-285aae04226a.jpg")
+  background: url("../images/Antosh_BXR_3_2e352ac1-2171-4088-9512-285aae04226a.jpg")
     no-repeat 50% 50% / cover;
 }
 .col-item03 {
-  background: url("/images/Stussy-Spring-_24---7.webp") no-repeat 50% 50% /
+  background: url("../images/Stussy-Spring-_24---7.webp") no-repeat 50% 50% /
     cover;
 }
 .col-item04 {
-  background: url("/images/Stussy-Nike-Flight-89-Images1.webp") no-repeat 50%
+  background: url("../images/Stussy-Nike-Flight-89-Images1.webp") no-repeat 50%
     50% / cover;
 }
 .col-item05 {
-  background: url("/images/Stussy-Talking-Heads-Image4.jpg") no-repeat 50% 50% /
+  background: url("../images/Stussy-Talking-Heads-Image4.jpg") no-repeat 50% 50% /
     cover;
 }
 
@@ -756,7 +756,7 @@ footer {
       rgba(255, 255, 255, 1) 75%,
       rgba(255, 255, 255, 1) 100%
     ),
-    url("/images/footer.jpg") no-repeat 50% 25% / cover;
+    url("../images/footer.jpg") no-repeat 50% 25% / cover;
 
   /* 	background:url('https://ifh.cc/g/f9lZc8.jpg')no-repeat 50% 55% / cover; */
 }
@@ -922,7 +922,7 @@ footer {
 
 .shop-pop-up-box-img {
   width: 40%;
-  background: url("/images/Seoul_Chapter_1.jpg") no-repeat 50% 20% / cover;
+  background: url("../images/Seoul_Chapter_1.jpg") no-repeat 50% 20% / cover;
 }
 
 .shop-pop-up-box-text {
