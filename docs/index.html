@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stussy</title>
+
+    <!-- 공통 JS 연결-->
+    <script defer src="/script/script.js"></script>
+
+    <!-- 폰트 적용 -->
+    <link rel="stylesheet" href="style/font.css" />
+
+    <!-- 공통 css 연결 -->
+    <link rel="stylesheet" href="style/style.css" />
+    <!-- JQ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 테일윈드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 폰트어썸 -->
+    <!-- 폰트어썸 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- gasp 불러오기 -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <!-- ScrollTrigger트리거 불러오기 -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- AOS 라이브러리 불러오기 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- HTML in your document's head -->
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  </head>
+  <body>
+    <!-- 커스텀 시작 -->
+    <div class="stussy__wrap">
+      <!-- header 시작 -->
+      <header id="header">
+        <form id="search" action="search">
+          <div class="serach-box mx-auto">
+            <div class="ss-search-icon-box">
+              <span>
+                <i class="fa-regular fa-magnifying-glass ss-search-icon"> </i>
+              </span>
+            </div>
+            <input type="search" placeholder="stussy" />
+          </div>
+          <div class="ss-search-close-box">
+            <span>
+              <i class="fa-solid fa-xmark ss-search-close"></i>
+            </span>
+          </div>
+        </form>
+
+        <div class="st-header__container flex h-full mx-auto">
+          <div class="st-header__menu st-header__l-menu flex-1">
+            <div class="l-menu__iconbox ss-sidemenu-icon-box">
+              <span>
+                <i class="icon fa-regular fa-bars ss-sidemenu-icon"></i>
+              </span>
+            </div>
+
+            <div class="l-menu__iconbox ss-search-icon-box">
+              <span>
+                <i class="icon fa-regular fa-magnifying-glass ss-search-icon">
+                </i>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="st-header__menu st-header__logo flex-1 flex justify-center"
+          >
+            <a href="#">
+              <img src="/images/stussy_logo.png" alt="스투시 로고" />
+            </a>
+          </div>
+
+          <div class="st-header__menu st-header__r-menu flex-1 flex">
+            <div class="r-menu__iconbox ss-user-icon-box">
+              <span>
+                <i class="icon fa-regular fa-user ss-user-icon"></i>
+              </span>
+            </div>
+            <div class="r-menu__iconbox ss-user-bag-box">
+              <span>
+                <i class="icon fa-regular fa-bag-shopping ss-bag-icon"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu">
+          <div class="st-menu__container mx-auto flex">
+            <div class="st-menu-box st-menu__collection-box flex-1">
+              <a href="#">
+                <div class="st-menu__inner st-menu__collection">
+                  <h2>24 S/S COLLECTION</h2>
+                </div>
+              </a>
+            </div>
+
+            <div class="st-menu-box st-menu__collaboration-box flex-1">
+              <a href="#">
+                <div class="st-menu__inner st-menu__collaboration">
+                  <h2>COLLABORATION</h2>
+                </div>
+              </a>
+            </div>
+            <div class="st-menu-box st-menu__nav-box flex-3">
+              <div class="st-menu__nav">
+                <ul>
+                  <li>
+                    <a href=""> SHOP </a>
+                    <ul class="flex">
+                      <li>
+                        <a href="#"> NEW </a>
+                      </li>
+                      <li>
+                        <a href="#"> TOPS </a>
+                      </li>
+                      <li>
+                        <a href="#"> BOTTOMS </a>
+                      </li>
+                      <li>
+                        <a href="#"> HEADWEAR </a>
+                      </li>
+                      <li>
+                        <a href="#"> ACCESSOREIS </a>
+                      </li>
+                      <li>
+                        <a href="#"> ALL </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href=""> FEATURES </a>
+                    <ul class="flex">
+                      <li>
+                        <a href="#"> COLLABORATIONS </a>
+                      </li>
+                      <li>
+                        <a href="#"> COLLECTIONS </a>
+                      </li>
+                      <li>
+                        <a href="#"> FEATURES </a>
+                      </li>
+                      <li>
+                        <a href="#"> LOOKBOOKS </a>
+                      </li>
+                      <li>
+                        <a href="#"> ALL </a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href=""> SUPPORT </a>
+                    <ul class="flex">
+                      <li>
+                        <a href="#"> CUSTOMER SUPPORT </a>
+                      </li>
+                      <li>
+                        <a href="#"> ACCOUNT </a>
+                      </li>
+                      <li>
+                        <a href="#"> CHAPTERS </a>
+                      </li>
+                      <li>
+                        <a href="#"> SIZE GUIDE </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- sidemenu 시작-->
+        <div class="st-sidemenu inset-x-0">
+          <div class="st-sidemenu-box">
+            <div class="st-sidemenu-headbox mx-auto">
+              <span>
+                <i class="icon fa-solid fa-xmark st-sidemenu-close"></i>
+              </span>
+            </div>
+            <div class="st-sidemenu-mainbox">
+              <nav class="st-sidemenu-navbox">
+                <ul>
+                  <li>
+                    <a href="#"> SHOP </a>
+                    <ul>
+                      <li>
+                        <a href="#"> NEW </a>
+                      </li>
+                      <li>
+                        <a href="#"> TOPS </a>
+                      </li>
+                      <li>
+                        <a href="#"> BOTTOMS </a>
+                      </li>
+                      <li>
+                        <a href="#"> HEADWEAR </a>
+                      </li>
+                      <li>
+                        <a href="#"> ACCESSOREIS </a>
+                      </li>
+                      <li>
+                        <a href="#"> ALL </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#"> FEATURES </a>
+                    <ul>
+                      <li>
+                        <a href="#"> COLLABORATION </a>
+                      </li>
+                      <li>
+                        <a href="#"> COLLECTIONS </a>
+                      </li>
+                      <li>
+                        <a href="#"> FEATURES </a>
+                      </li>
+                      <li>
+                        <a href="#"> LOOKBOOKS </a>
+                      </li>
+                      <li>
+                        <a href="#"> ALL </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#"> SUPPORT </a>
+                    <ul>
+                      <li>
+                        <a href="#"> CUSTOMER SUPPORT </a>
+                      </li>
+                      <li>
+                        <a href="#"> ACOUNT </a>
+                      </li>
+                      <li>
+                        <a href="#"> CHAPTERS </a>
+                      </li>
+                      <li>
+                        <a href="#"> SIZE GUIDE </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"> 장바구니 </a>
+                  </li>
+                  <li>
+                    <a href="#"> 매장보기 </a>
+                  </li>
+                  <li>
+                    <a href="#"> 도움이 필요하세요? </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- 메인 section 시작 -->
+      <main>
+        <section class="st_section1">
+          <div class="swiper st_section1_video-swiper">
+            <!--position: relative // container가 된다.-->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <video
+                  class="st_section1_video01"
+                  autoplay
+                  loop
+                  muted
+                  src="/video/sectionvideo1.mp4"
+                ></video>
+              </div>
+              <div class="swiper-slide">
+                <video
+                  class="st_section1_video02"
+                  autoplay
+                  loop
+                  muted
+                  src="/video/sectionvideo2.mp4"
+                ></video>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="st_section2">
+          <div class="st_section2__container">
+            <div class="st_section2__itembox flex">
+              <div class="itembox itembox-bannerbox">
+                <div class="itembox-banner flex flex-col">
+                  <h2>NEW</h2>
+                  <p>STÜSSY SPRING '24</p>
+                </div>
+              </div>
+
+              <div class="itembox itembox-items">
+                <div class="itembox-inner flex flex-col">
+                  <div class="item-grid-box">
+                    <a href="#" class="itemcard">
+                      <div class="item frontcard f-item01">
+                        <img
+                          class="front"
+                          src="/images/115765_BLAC_1.jpg"
+                          alt="스투시바람막이 블랙"
+                        />
+                      </div>
+                      <div class="item backcard b-item01">
+                        <img
+                          class="back"
+                          src="/images/115765_BLAC_2.jpg"
+                          alt="스투시바람막이 블랙"
+                        />
+                      </div>
+                    </a>
+
+                    <a href="#" class="itemcard">
+                      <div class="item frontcard f-item02">
+                        <img
+                          class="front"
+                          src="/images/115765_REDD_1.jpg"
+                          alt="스투시바람막이 레드"
+                        />
+                      </div>
+                      <div class="item backcard b-item02">
+                        <img
+                          class="back"
+                          src="/images/115765_REDD_2.jpg"
+                          alt="스투시바람막이 레드"
+                        />
+                      </div>
+                    </a>
+
+                    <a href="#" class="itemcard">
+                      <div class="item frontcard f-item03">
+                        <img
+                          class="front"
+                          src="/images/1905046_WHIT_1.jpg"
+                          alt="스투시 반팔티 화이트"
+                        />
+                      </div>
+                      <div class="item backcard b-item03">
+                        <img
+                          class="back"
+                          src="/images/1905046_WHIT_2.jpg"
+                          alt="스투시 반팔티 화이트"
+                        />
+                      </div>
+                    </a>
+
+                    <a href="#" class="itemcard">
+                      <div class="item frontcard f-item04">
+                        <img
+                          class="front"
+                          src="/images/1905046_BERR_1.jpg"
+                          alt="스투시 반팔티 핑크"
+                        />
+                      </div>
+                      <div class="item backcard b-item04">
+                        <img
+                          class="back"
+                          src="/images/1905046_BERR_2.jpg"
+                          alt="스투시 반팔티 핑크"
+                        />
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="view_btn">
+                    <a href="#">
+                      <span> View More - </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="st_section2__belt">
+            <h1>STÜSSY World wide since 1980</h1>
+            <h1>STÜSSY World wide since 1980</h1>
+            <h1>STÜSSY World wide since 1980</h1>
+            <h1>STÜSSY World wide since 1980</h1>
+            <h1>STÜSSY World wide since 1980</h1>
+            <h1>STÜSSY World wide since 1980</h1>
+          </div>
+        </section>
+        <section class="st_section3">
+          <div class="st_section3-bannerbox flex" data-aos="fade-down">
+            <a href="#">
+              <div class="st_section3-banner"></div>
+              <div class="st_section3-banner-txtbox">
+                <h2>STÜSSY SPRING '24 JEWELRY</h2>
+                <p>VIEW MORE</p>
+              </div>
+            </a>
+            <div class="st_section3-banner-video">
+              <!-- 			<video autoplay muted loop src="https://ifh.cc/v/Wjp3tp.mp4">
+			</video> -->
+              <iframe
+                width="400"
+                height="210"
+                src="https://www.youtube.com/embed/pzGrQlQ9W7g?si=ktE5Q-apD7HmMSZ9?&autoplay=1&mute=1&end=18&controls=0"
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="st_section3-collabobox flex">
+            <div class="st_section3-collabo collabo1">
+              <p>24 S/S COLLECTION</p>
+            </div>
+
+            <div class="st_section3-collabo collabo2">
+              <p>COLLABORATION</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- section 4 시작-->
+        <section class="st_section4">
+          <video loop autoplay muted src="https://ifh.cc/v/lJBbo8.mp4"></video>
+          <div class="st_section4-container flex">
+            <div class="section4-box section4-leftbox">
+              <div class=".section4-swiperbox section4-leftswiperbox">
+                <div class="swiper">
+                  <!--position: relative // container가 된다.-->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide col-item01"></div>
+                    <div class="swiper-slide col-item02"></div>
+                    <div class="swiper-slide col-item03"></div>
+                    <div class="swiper-slide col-item04"></div>
+                    <div class="swiper-slide col-item05"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section4-box section4-rightbox flex justify-end">
+              <div class=".section4-swiperbox section4-rightswiperbox">
+                <div class="swiper">
+                  <!--position: relative // container가 된다.-->
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide col-item01">
+                      STÜSSY & BEATS BY DRE
+                    </div>
+                    <div class="swiper-slide col-item02">
+                      STÜSSY & TALKING HEADS
+                    </div>
+                    <div class="swiper-slide col-item03">
+                      STÜSSY SPRING '24 DELIVERY TWO
+                    </div>
+                    <div class="swiper-slide col-item04">
+                      STÜSSY & METALHEADZ
+                    </div>
+                    <div class="swiper-slide col-item05">
+                      STÜSSY & BORN X RAISED
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section4-txtbox">
+            <h2>FEATURES</h2>
+            <p>
+               Stüssy presents a collection of enigmatic<br />
+              staples alongside seasonal mainstays
+            </p>
+            <a href="#">
+              <div>View All</div>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer 시작 -->
+      <footer>
+        <div class="st-footer-container mx-auto">
+          <div class="footer-top">
+            <div class="footer-top-box footer-logo-box">
+              <img src="/images/stussy_logo.png" alt="스투시 로고" />
+            </div>
+            <div class="footer-top-newsretter"></div>
+          </div>
+
+          <div class="footer-middle">
+            <div class="footer-middle-box footer-contact-box">
+              <ul>
+                <li>코리아트라이브 유한회사 | 대표 SEJIN PARK</li>
+                <li>사업자등록번호 561-87-00715</li>
+                <li>서울특별시 강남구 대치동 942 해성빌딩</li>
+                <li>
+                  통신판매신고번호 제 2018 - 서울서초 - 0860 호 [사업자정보확인]
+                </li>
+                <li>전화 00-30832-10322 | 이메일 support@stussy.co.kr </li>
+              </ul>
+            </div>
+
+            <div class="footer-middle-box footer-sns-box">
+              <ul class="flex h-full">
+                <li>
+                  <a href="#">
+                    <span class="sns-icon sns-icon__facebook"> </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sns-icon sns-icon__twitter"> </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sns-icon sns-icon__instagram"> </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sns-icon sns-icon__youtube"> </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div>© 2024 STÜSSY</div>
+            <div>개인정보관리책임자 KOREA TRIBE, INC. | 개인정보취급방침</div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- 우측 하단 버튼 -->
+      <div class="btn-box">
+        <button class="shop-btn">
+          <i class="shop-btn-icon fa-solid fa-shop"></i>
+        </button>
+
+        <button class="top-btn">
+          <i class="top-btn-icon fa-solid fa-angle-up"></i>
+        </button>
+      </div>
+
+      <!-- 팝업 시작 -->
+      <div class="shop-pop-up" id="pop-up">
+        <div class="shop-pop-up-box">
+          <div class="shop-pop-up-box-content shop-pop-up-box-img"></div>
+
+          <div class="shop-pop-up-box-content shop-pop-up-box-text">
+            <button class="pop-up-close">
+              <i class="pop-up-close-icon fa-solid fa-xmark"></i>
+            </button>
+            <div class="shop-pop-up-box-text-con mx-auto">
+              <div class="pop-up-text shop-pop-up-box-text-box1">
+                <h2>STÜSSY SEOUL</h2>
+                <p>서울특별시 강남구 신사동 압구정로46길 42</p>
+                <p>645-24, Sinsa-Dong, Gangnam-Gu Seoul, Korea</p>
+              </div>
+
+              <div class="pop-up-text shop-pop-up-box-text-box2 flex">
+                <div class="Reservation-icon-box">
+                  <i class="Reservation-icon fa-light fa-phone"></i>
+                </div>
+                <div>
+                  <p>Reservation</p>
+                  <p>02-3444-4524</p>
+                  <p>seoul@stussy.com</p>
+                </div>
+              </div>
+
+              <div class="pop-up-text shop-pop-up-box-text-box3 flex">
+                <div class="Hours-icon-box">
+                  <i class="Hours-icon fa-regular fa-clock"></i>
+                </div>
+                <div>
+                  <p>Opening Hours</p>
+                  <p>Monday - Sunday</p>
+                  <p>11AM - 9PM</p>
+                </div>
+              </div>
+
+              <div class="shop-pop-up-box-text-box4 flex">
+                <p>
+                  스트리트웨어 브랜드의 트렌디한 남성 및 여성용 의류와 모자,
+                  액세서리를 판매하는 소매점입니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
