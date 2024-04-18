@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stussy</title>
+
+    <!-- 공통 JS 연결-->
+    <script defer src="script/scriptshop.js"></script>
+
+    <!-- 폰트 적용 -->
+    <link rel="stylesheet" href="style/font.css" />
+
+    <!-- 공통 css 연결 -->
+    <link rel="stylesheet" href="style/shopstyle.css" />
+    <!-- JQ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- 테일윈드 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 폰트어썸 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- HTML in your document's head -->
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  </head>
+  <body>
+    <div class="stussy__wrap">
+      <header id="header">
+        <form id="search" action="search">
+          <div class="serach-box mx-auto">
+            <div class="ss-search-icon-box">
+              <span>
+                <i class="fa-regular fa-magnifying-glass ss-search-icon"> </i>
+              </span>
+            </div>
+            <input type="search" placeholder="stussy" />
+          </div>
+          <div class="ss-search-close-box">
+            <span>
+              <i class="fa-solid fa-xmark ss-search-close"></i>
+            </span>
+          </div>
+        </form>
+
+        <div class="st-header__container flex h-full mx-auto">
+          <div class="st-header__menu st-header__l-menu flex-1">
+            <div class="l-menu__iconbox ss-sidemenu-icon-box">
+              <span>
+                <i class="icon fa-regular fa-bars ss-sidemenu-icon"></i>
+              </span>
+            </div>
+
+            <div class="l-menu__iconbox ss-search-icon-box">
+              <span>
+                <i class="icon fa-regular fa-magnifying-glass ss-search-icon">
+                </i>
+              </span>
+            </div>
+          </div>
+
+          <div
+            class="st-header__menu st-header__logo flex-1 flex justify-center"
+          >
+            <a href="./index.html">
+              <img src="./images/stussy_logo.png" alt="스투시 로고" />
+            </a>
+          </div>
+
+          <div class="st-header__menu st-header__r-menu flex-1 flex">
+            <div class="r-menu__iconbox ss-user-icon-box">
+              <span>
+                <i class="icon fa-regular fa-user ss-user-icon"></i>
+              </span>
+            </div>
+            <div class="r-menu__iconbox ss-user-bag-box">
+              <span>
+                <i class="icon fa-regular fa-bag-shopping ss-bag-icon"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- sidemenu 시작-->
+        <div class="st-sidemenu inset-x-0">
+          <div class="st-sidemenu-box">
+            <div class="st-sidemenu-headbox mx-auto">
+              <span>
+                <i class="icon fa-solid fa-xmark st-sidemenu-close"></i>
+              </span>
+            </div>
+            <div class="st-sidemenu-mainbox">
+              <nav class="st-sidemenu-navbox">
+                <ul>
+                  <li>
+                    <a href="#"> SHOP </a>
+                    <ul>
+                      <li>
+                        <a href="#"> NEW </a>
+                      </li>
+                      <li>
+                        <a href="#"> TOPS </a>
+                      </li>
+                      <li>
+                        <a href="#"> BOTTOMS </a>
+                      </li>
+                      <li>
+                        <a href="#"> HEADWEAR </a>
+                      </li>
+                      <li>
+                        <a href="#"> ACCESSOREIS </a>
+                      </li>
+                      <li>
+                        <a href="#"> ALL </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#"> FEATURES </a>
+                    <ul>
+                      <li>
+                        <a href="#"> COLLABORATION </a>
+                      </li>
+                      <li>
+                        <a href="#"> COLLECTIONS </a>
+                      </li>
+                      <li>
+                        <a href="#"> FEATURES </a>
+                      </li>
+                      <li>
+                        <a href="#"> LOOKBOOKS </a>
+                      </li>
+                      <li>
+                        <a href="#"> ALL </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#"> SUPPORT </a>
+                    <ul>
+                      <li>
+                        <a href="#"> CUSTOMER SUPPORT </a>
+                      </li>
+                      <li>
+                        <a href="#"> ACOUNT </a>
+                      </li>
+                      <li>
+                        <a href="#"> CHAPTERS </a>
+                      </li>
+                      <li>
+                        <a href="#"> SIZE GUIDE </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <a href="#"> 장바구니 </a>
+                  </li>
+                  <li>
+                    <a href="#"> 매장보기 </a>
+                  </li>
+                  <li>
+                    <a href="#"> 도움이 필요하세요? </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="st-shop">
+          <div class="shop-banner">
+            <img src="https://ifh.cc/g/FffSDl.jpg" alt="#" />
+          </div>
+
+          <div class="st-shop-container mx-auto">
+            <div class="shop-title">
+              <h2>STÜSSY SPRING '24</h2>
+            </div>
+
+            <div class="shop-item-box">
+              <div class="item-box-grid">
+                <div class="item">
+                  <a href="#" class="itemcard">
+                    <div class="item frontcard f-item01">
+                      <img
+                        class="front"
+                        src="./images/115765_BLAC_3.jpg"
+                        alt="스투시바람막이 블랙"
+                      />
+                    </div>
+                    <span class="item-name"
+                      >BEACH SHELL COATED RIPSTOP BLACK</span
+                    ><br />
+                  </a>
+                  <span class="item-price">₩289,000</span>
+                </div>
+                <div class="item">
+                  <a href="#" class="itemcard">
+                    <div class="item frontcard f-item01">
+                      <img
+                        class="front"
+                        src="./images/115765_REDD_8.webp"
+                        alt="스투시바람막이 레드"
+                      />
+                    </div>
+                    <span class="item-name"
+                      >BEACH SHELL COATED RIPSTOP BLACK</span
+                    ><br />
+                  </a>
+                  <span class="item-price">₩289,000</span>
+                </div>
+                <div class="item">
+                  <a href="#" class="itemcard">
+                    <div class="item frontcard f-item01">
+                      <img
+                        class="front"
+                        src="./images/115765_BONE_3.webp"
+                        alt="스투시바람막이 블랙"
+                      />
+                    </div>
+                    <span class="item-name"
+                      >BEACH SHELL COATED RIPSTOP BLACK</span
+                    ><br />
+                  </a>
+                  <span class="item-price">₩289,000</span>
+                </div>
+                <div class="item">
+                  <a href="#" class="itemcard">
+                    <div class="item frontcard f-item01">
+                      <img
+                        class="front"
+                        src="./images/115746_MAGE_5_64b067ea-2d23-4080-8828-66ebe2a71423.webp"
+                        alt="스투시바람막이 블랙"
+                      />
+                    </div>
+                    <span class="item-name"
+                      >BEACH SHELL COATED RIPSTOP BLACK</span
+                    ><br />
+                  </a>
+                  <span class="item-price">₩289,000</span>
+                </div>
+                <div class="item">
+                  <a href="#" class="itemcard">
+                    <div class="item frontcard f-item01">
+                      <img
+                        class="front"
+                        src="./images/115765_BLAC_3.jpg"
+                        alt="스투시바람막이 블랙"
+                      />
+                    </div>
+                    <span class="item-name"
+                      >BEACH SHELL COATED RIPSTOP BLACK</span
+                    ><br />
+                  </a>
+                  <span class="item-price">₩289,000</span>
+                </div>
+                <div class="item">
+                  <a href="#" class="itemcard">
+                    <div class="item frontcard f-item01">
+                      <img
+                        class="front"
+                        src="./images/115765_BLAC_3.jpg"
+                        alt="스투시바람막이 블랙"
+                      />
+                    </div>
+                    <span class="item-name"
+                      >BEACH SHELL COATED RIPSTOP BLACK</span
+                    ><br />
+                  </a>
+                  <span class="item-price">₩289,000</span>
+                </div>
+                <div class="item">
+                  <a href="#" class="itemcard">
+                    <div class="item frontcard f-item01">
+                      <img
+                        class="front"
+                        src="./images/115765_BLAC_3.jpg"
+                        alt="스투시바람막이 블랙"
+                      />
+                    </div>
+                    <span class="item-name"
+                      >BEACH SHELL COATED RIPSTOP BLACK</span
+                    ><br />
+                  </a>
+                  <span class="item-price">₩289,000</span>
+                </div>
+                <div class="item">
+                  <a href="#" class="itemcard">
+                    <div class="item frontcard f-item01">
+                      <img
+                        class="front"
+                        src="./images/115765_BLAC_3.jpg"
+                        alt="스투시바람막이 블랙"
+                      />
+                    </div>
+                    <span class="item-name"
+                      >BEACH SHELL COATED RIPSTOP BLACK</span
+                    ><br />
+                  </a>
+                  <span class="item-price">₩289,000</span>
+                </div>
+                <div class="item">
+                  <a href="#" class="itemcard">
+                    <div class="item frontcard f-item01">
+                      <img
+                        class="front"
+                        src="./images/115765_BLAC_3.jpg"
+                        alt="스투시바람막이 블랙"
+                      />
+                    </div>
+                    <span class="item-name"
+                      >BEACH SHELL COATED RIPSTOP BLACK</span
+                    ><br />
+                  </a>
+                  <span class="item-price">₩289,000</span>
+                </div>
+                <div class="item">
+                  <a href="#" class="itemcard">
+                    <div class="item frontcard f-item01">
+                      <img
+                        class="front"
+                        src="https://ifh.cc/g/5Ct6NR.jpg"
+                        alt="스투시바람막이 블랙"
+                      />
+                    </div>
+                    <span class="item-name"
+                      >BEACH SHELL COATED RIPSTOP BLACK</span
+                    ><br />
+                  </a>
+                  <span class="item-price">₩289,000</span>
+                </div>
+                <div class="item">
+                  <a href="#" class="itemcard">
+                    <div class="item frontcard f-item01">
+                      <img
+                        class="front"
+                        src="https://ifh.cc/g/5Ct6NR.jpg"
+                        alt="스투시바람막이 블랙"
+                      />
+                    </div>
+                    <span class="item-name"
+                      >BEACH SHELL COATED RIPSTOP BLACK</span
+                    ><br />
+                  </a>
+                  <span class="item-price">₩289,000</span>
+                </div>
+                <div class="item">
+                  <a href="#" class="itemcard">
+                    <div class="item frontcard f-item01">
+                      <img
+                        class="front"
+                        src="https://ifh.cc/g/5Ct6NR.jpg"
+                        alt="스투시바람막이 블랙"
+                      />
+                    </div>
+                    <span class="item-name"
+                      >BEACH SHELL COATED RIPSTOP BLACK</span
+                    ><br />
+                  </a>
+                  <span class="item-price">₩289,000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="st-footer-container mx-auto">
+          <div class="footer-top">
+            <div class="footer-top-box footer-logo-box">
+              <img src="./images/stussy_logo.png" alt="스투시 로고" />
+            </div>
+            <div class="footer-top-newsretter"></div>
+          </div>
+
+          <div class="footer-middle">
+            <div class="footer-middle-box footer-contact-box">
+              <ul>
+                <li>코리아트라이브 유한회사 | 대표 SEJIN PARK</li>
+                <li>사업자등록번호 561-87-00715</li>
+                <li>서울특별시 강남구 대치동 942 해성빌딩</li>
+                <li>
+                  통신판매신고번호 제 2018 - 서울서초 - 0860 호 [사업자정보확인]
+                </li>
+                <li>전화 00-30832-10322 | 이메일 support@stussy.co.kr </li>
+              </ul>
+            </div>
+
+            <div class="footer-middle-box footer-sns-box">
+              <ul class="flex h-full">
+                <li>
+                  <a href="#">
+                    <span class="sns-icon sns-icon__facebook"> </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sns-icon sns-icon__twitter"> </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sns-icon sns-icon__instagram"> </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="sns-icon sns-icon__youtube"> </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div>© 2024 STÜSSY</div>
+            <div>개인정보관리책임자 KOREA TRIBE, INC. | 개인정보취급방침</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

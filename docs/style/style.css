@@ -236,6 +236,16 @@ html {
   overflow-x: hidden;
 }
 
+.st-sidemenu-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.st-sidemenu-box::-webkit-scrollbar-thumb {
+  width: 6px;
+  background-color: #a8a7a3;
+  border-radius: 4px;
+}
+
 .st-sidemenu-box.active {
   transform: translateX(0%);
 }
@@ -270,8 +280,6 @@ html.st-sidemenu-box-actived > body {
   height: 100%;
 }
 
-.st-sidemenu-navbox {
-}
 .st-sidemenu-navbox > ul {
   padding: 3rem;
 }
