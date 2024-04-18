@@ -215,6 +215,7 @@ html.st-sidemenu-box-actived > body {
   font-size: 1rem;
 }
 
+/* 컨텐츠(shop gird) 시작  */
 .st-shop {
   width: 100%;
 }
@@ -408,6 +409,14 @@ footer {
   .shop-title > h2 {
     font-size: 1.3rem;
   }
+  .st-shop-container {
+    width: 90%;
+    padding-top: 2rem;
+  }
+
+  .shop-item-box {
+    padding-top: 2rem;
+  }
 
   .item-box-grid {
     display: grid;
@@ -418,6 +427,7 @@ footer {
     row-gap: 30px;
     column-gap: 10px;
   }
+
   .item-name,
   .item-price {
     font-size: 0.75rem;
