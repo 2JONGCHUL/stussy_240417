@@ -194,11 +194,11 @@ html.st-sidemenu-box-actived > body {
   font-size: 1rem;
 }
 
-.st-sidemenu-navbox > ul > li > a:not(:only-child)::after {
+.st-sidemenu-navbox > ul:first-child > li > a:not(:only-child)::after {
   content: "\f078";
 }
 
-.st-sidemenu-navbox > ul > li.active > a::after {
+.st-sidemenu-navbox > ul:first-child > li.active > a::after {
   content: "\f077";
 }
 
